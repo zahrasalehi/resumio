@@ -6,7 +6,7 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from rest_framework.exceptions import ValidationError, PermissionDenied
 
-from resumio.resumio import settings
+from resumio import settings
 
 
 def redis_key_eligible(key, ex, max_attempt=settings.MAX_CODE_ATTEMPT):
