@@ -1,10 +1,12 @@
 import datetime
+import os
 from pathlib import Path
 from .redis_client import redis_client
 
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-t^hc(&2v5voqh^rl%jd@)yu7q))2ec*5#=_@6g02s#%55ly^8$'
 DEBUG = True
 AUTH_USER_MODEL = 'authentication.User'
@@ -18,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'authentication.apps.AuthenticationConfig',
+    'thisIsWhereUShouldTakeAlook.apps.ThisiswhereushouldtakealookConfig'
 ]
 
 MIDDLEWARE = [
@@ -50,7 +53,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'resumio.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -67,6 +69,7 @@ TIME_ZONE = 'Asia/Tehran'
 USE_I18N = True
 USE_TZ = True
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
