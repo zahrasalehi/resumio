@@ -1,5 +1,4 @@
-#resumio
-##readme file
+# RESUMIO
 
 This project help you to give it a pro look to your simple, ugly, pathetic resume... (you know that well.)
 well dont be upset, im here to help you make a really impressive resume even google will be amazed
@@ -17,4 +16,4 @@ so what you should do? you may ask. follow the steps bellow:
 
    a few points to mention:
    1. this may have some bugs (plz if u came accross one, handle it yourself)
-   2. you dont need to login to make a resume, **HOWEVER** to <font face="Verdana" size="3" color='green'>save</font>or <font face="Verdana" size="3" color='green'>print</font> it you need to.
+   2. you dont need to login to make a resume, **HOWEVER** to **sav** or **print** it you need to.
