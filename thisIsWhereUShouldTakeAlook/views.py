@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 import openai
 from .models import ChatHistory
-from ..resumio import settings
+from resumio import settings
 
 
 def chat_view(request):
@@ -23,4 +23,5 @@ def chat_view(request):
         answer=answer
     )
 
-    return JsonResponse({'user_input': user_input, 'answer': answer})
+    return render(request, '../templates/thisIsWhereUShouldTakeAlook/resume_page.html',
+                  {'user_input': user_input, 'answer': answer})
