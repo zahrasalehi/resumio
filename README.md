@@ -16,4 +16,4 @@ so what you should do? you may ask. follow the steps bellow:
 
    a few points to mention:
    1. this may have some bugs (plz if u came accross one, handle it yourself)
-   2. you dont need to login to make a resume, **HOWEVER** to **sav** or **print** it you need to.
+   2. you dont need to login to make a resume, **HOWEVER** to **save** or **print** it you need to.
