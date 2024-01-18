@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'resumio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
 
@@ -127,3 +127,5 @@ OTP_BLOCK_TIME = datetime.timedelta(hours=1)
 if DEBUG:
     print(redis_client.client_info())
     JWT_AUTH['JWT_EXPIRATION_DELTA'] = datetime.timedelta(days=1)
+
+OPENAI_API_KEY = 'i_bet_u_came_here_to_copy_the_api_key_:)))_instead_listen_to_careless_whisper'
