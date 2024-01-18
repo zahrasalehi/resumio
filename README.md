@@ -1,10 +1,8 @@
 # RESUMIO
-
-ever tired of your simple, ugly, pathetic resume? (you know that well.)
 ---
-well dont be upset, im here to help you make a really impressive resume even google will be amazed!!
----
-so what you should do? you may ask. follow the steps bellow: 
+ever tired of your simple, ugly, pathetic resume? (you know that well.)  
+well dont be upset, im here to help you make a really impressive resume even google will be amazed!!  
+so what you should do? you may ask. follow the steps bellow:   
 
 1. make an account in openai.com
 2. know the "careless whisper" music (optional but recommended)
