@@ -6,13 +6,21 @@ function showAnswer() {
 }
 
 function getAnswer(user_input) {
-    // Here you can implement your logic to retrieve the answer based on the question
-    // For simplicity, let's assume we have a predefined set of questions and answers
-    var answers = {
-        "What is the capital of France?": "Paris",
-        "Who painted the Mona Lisa?": "Leonardo da Vinci",
-        "What is the answer to life, the universe, and everything?": "42"
-    };
 
-    return answers[user_input] || "Sorry, I don't have the answer to that question.";
+    fetch('/resume/get')  // Replace with your actual URL
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const answer = answer.key;
+
+            // Use the extracted values as needed
+            return answer
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
 }
