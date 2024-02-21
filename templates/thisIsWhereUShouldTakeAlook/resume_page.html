@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Resume maker</title>
-    <style>
-        .answer {
-            display: none;
-        }
-    </style>
-    <script src="{% static 'js/js_file.js' %}"></script>
+
 </head>
 <body>
 <h1>Dynamic Resume Form</h1>
-<form>
-    <label for="user_input"></label>
-    <p id="user_input">{{ user_input }}</p>
-    <br>
-    <input type="button" value="Submit" onclick="showAnswer()">
+<form method="post">
+    {% csrf_token %}
+    <label for="query">Enter your question:</label>
+    <input type="text" id="query" name="q" value="{{ query }}">
+    <button type="submit" value="search">hit Enter instead!</button>
 </form>
-<div id="answer" class="answer"></div>
 
 </body>
 </html>
