@@ -18,6 +18,6 @@ def get_question(request):
     # )
     answer = ChatHistory.objects.filter(user_input__icontains=query)
     # Save chat history
-    return render(request, '../templates/thisIsWhereUShouldTakeAlook/page_one.html',
+    return render(request, '../templates/thisIsWhereUShouldTakeAlook/resume_page.html',
                   {'query': query}, {'answer': answer})
 # TODO: make html page better
