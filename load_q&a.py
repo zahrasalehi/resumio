@@ -13,3 +13,7 @@ class Command(BaseCommand):
                 ChatHistory.objects.create(user_input=entry['user_input'], answer=entry['answer'])
 
         self.stdout.write(self.style.SUCCESS('Successfully loaded fake data.'))
+
+
+# i changed the strategy cuz this proj should be work. and without the api key this was just a trash.
+# and also open ai is banned in iran so whats the usage if i cant use it later cuz my free account will be over
